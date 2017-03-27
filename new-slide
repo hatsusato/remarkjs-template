@@ -1,0 +1,52 @@
+#!/bin/bash
+
+set -eu
+
+error() {
+    echo "$@" >&2
+}
+
+usage() {
+    readonly usage_message=$(cat <<EOF
+Usage: $0 [-m] NAME
+Setup a directory for new slide.
+  -m: use mathjax
+EOF
+	     )
+    error "${usage_message}"
+    exit 1
+}
+
+readonly current_dir="$(pwd)"
+readonly template_dir="$(cd "$(dirname "$0")" && pwd)"
+readonly slide_file="${template_dir}/slide.md"
+
+index_file="${template_dir}/index.html"
+
+while getopts :m OPT
+do
+    case $OPT in
+	m) index_file="${template_dir}/index-mathjax.html"
+	   ;;
+	\?) usage
+	    ;;
+    esac
+done
+shift $((OPTIND - 1))
+(($# == 0)) && {
+    error "specified no argument: expected 1"
+    usage
+}
+(($# != 1)) && {
+    error "specified $# arguments: expected 1"
+    usage
+}
+
+readonly target_dir="${current_dir}/$1"
+readonly target_index="${target_dir}/index.html"
+readonly target_slide="${target_dir}/slide.md"
+
+mkdir -p "${target_dir}"
+cp -f "${index_file}" "${target_index}"
+cp -f "${slide_file}" "${target_slide}"
+ln -snf "${template_dir}" "${target_dir}/template"
