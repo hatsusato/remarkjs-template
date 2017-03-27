@@ -18,9 +18,8 @@ EOF
 }
 
 readonly current_dir="$(pwd)"
-readonly template_dir="$(cd "$(dirname "$0")" && pwd)"
+readonly template_dir="$(dirname "$(readlink -f "$0")")"
 readonly slide_file="${template_dir}/slide.md"
-
 index_file="${template_dir}/index.html"
 
 while getopts :m OPT
