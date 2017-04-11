@@ -8,3 +8,9 @@ h1, h2, h3 {
     font-weight: normal;
 }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+img[alt="enter"] {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
