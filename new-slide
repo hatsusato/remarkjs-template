@@ -8,8 +8,9 @@ error() {
 
 usage() {
     readonly usage_message=$(cat <<EOF
-Usage: $0 [-m] NAME
+Usage: $0 [-km] NAME
 Setup a directory for new slide.
+  -k: use katex
   -m: use mathjax
 EOF
 	     )
@@ -22,9 +23,11 @@ readonly template_dir="$(dirname "$(readlink -f "$0")")"
 readonly slide_file="${template_dir}/slide.md"
 index_file="${template_dir}/index.html"
 
-while getopts :m OPT
+while getopts km OPT
 do
     case $OPT in
+	k) index_file="${template_dir}/index-katex.html"
+	   ;;
 	m) index_file="${template_dir}/index-mathjax.html"
 	   ;;
 	\?) usage
