@@ -1,5 +1,4 @@
-// Setup MathJax
-function setupMathJax() {
+function createSlideshow(options) {
     MathJax.Hub.Config({
         tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
@@ -11,4 +10,5 @@ function setupMathJax() {
         }).parent().addClass('has-jax');
     });
     MathJax.Hub.Configured();
+    return remark.create(options);
 }
