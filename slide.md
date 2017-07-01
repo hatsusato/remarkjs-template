@@ -2,9 +2,9 @@ class: center, middle
 
 # TITLE
 
-## SUBTITLE
+### SUBTITLE
 
-## AUTHOR
+### AUTHOR
 
 PLACE
 
