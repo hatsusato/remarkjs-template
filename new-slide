@@ -13,25 +13,22 @@ Setup a directory for new slide.
   -k: use katex
   -m: use mathjax
 EOF
-	     )
+             )
     error "${usage_message}"
     exit 1
 }
 
-readonly current_dir="$(pwd)"
-readonly template_dir="$(dirname "$(readlink -f "$0")")"
+readonly current_dir=$(pwd -P)
+readonly template_dir=$(dirname "$(readlink -f "$0")")
 readonly slide_file="${template_dir}/slide.md"
 index_file="${template_dir}/index.html"
 
 while getopts km OPT
 do
     case $OPT in
-	k) index_file="${template_dir}/index-katex.html"
-	   ;;
-	m) index_file="${template_dir}/index-mathjax.html"
-	   ;;
-	\?) usage
-	    ;;
+        k) index_file="${template_dir}/index-katex.html";;
+        m) index_file="${template_dir}/index-mathjax.html";;
+        \?) usage;;
     esac
 done
 shift $((OPTIND - 1))
