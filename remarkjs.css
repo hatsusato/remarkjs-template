@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
+/* font */
 body {
     font-family: 'Noto Sans';
     font-weight: normal;
@@ -10,7 +11,9 @@ h1, h2, h3 {
     font-family: 'Noto Serif';
     font-weight: bold;
 }
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-code, .remark-inline-code {
+    font-family: 'Ubuntu Mono';
+}
 /* margin, padding */
 .remark-slide-content {
     padding: 1em 2em;
@@ -22,6 +25,7 @@ h1, h2, h3, p, ul {
     -webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
 }
+/* placement */
 .pull-left {
     float: left;
     width: 49%;
@@ -30,7 +34,6 @@ h1, h2, h3, p, ul {
     float: right;
     width: 49%;
 }
-
 img[alt="enter"] {
     float: right;
     width: 200px;
