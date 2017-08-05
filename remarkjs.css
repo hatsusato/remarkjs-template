@@ -11,6 +11,17 @@ h1, h2, h3 {
     font-weight: bold;
 }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+/* margin, padding */
+.remark-slide-content {
+    padding: 1em 2em;
+}
+pre {
+    margin: 0.5em 0px;
+}
+h1, h2, h3, p, ul {
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+}
 .pull-left {
     float: left;
     width: 49%;
