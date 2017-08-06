@@ -25,6 +25,21 @@ h1, h2, h3, p, ul, ol {
     -webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
 }
+/* table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table, td, th {
+    border: thin gray solid;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 0.1em 0.4em;
+}
+table th {
+    background-color: #cccccc;
+}
 /* placement */
 .pull-left {
     display: block;
