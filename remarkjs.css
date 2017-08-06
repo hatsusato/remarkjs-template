@@ -27,10 +27,12 @@ h1, h2, h3, p, ul, ol {
 }
 /* placement */
 .pull-left {
+    display: block;
     float: left;
     width: 49%;
 }
 .pull-right {
+    display: block;
     float: right;
     width: 49%;
 }
