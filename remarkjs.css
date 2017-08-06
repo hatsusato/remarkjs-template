@@ -40,6 +40,10 @@ td, th {
 table th {
     background-color: #cccccc;
 }
+/* highlight */
+.hljs-googlecode .hljs {
+    background: #F0F0F0;
+}
 /* placement */
 .pull-left {
     display: block;
