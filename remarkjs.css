@@ -21,7 +21,7 @@ h1, h2, h3 {
 pre {
     margin: 0.5em 0px;
 }
-h1, h2, h3, p, ul {
+h1, h2, h3, p, ul, ol {
     -webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
 }
