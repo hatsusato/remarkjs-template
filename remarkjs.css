@@ -26,9 +26,28 @@ h1, h2, h3 {
 .remark-code, .remark-inline-code {
     font-family: 'Ubuntu Mono';
 }
+/* font size */
+.remark-slide-content {
+    font-size: 32px;
+}
+.remark-slide-number {
+    font-size: 24px;
+}
+.remark-code {
+    font-size: 30px;
+}
+.small{
+    font-size: 60%;
+}
 /* margin, padding */
 .remark-slide-content {
     padding: 1em 2em;
+}
+.remark-code-span-highlighted {
+    padding: 0px;
+}
+.collapse-block > * {
+    margin: 0px;
 }
 pre {
     margin: 0.5em 0px;
@@ -66,6 +85,24 @@ table th {
     display: block;
     float: right;
     width: 49%;
+}
+.float-left{
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.centering, .split, .flex, .vflex {
+    display: flex;
+}
+.centering {
+    justify-content: space-around;
+}
+.split {
+    justify-content: space-between;
+}
+.vflex {
+    flex-direction: column;
 }
 img[alt="enter"] {
     float: right;
