@@ -8,44 +8,22 @@ error() {
 
 usage() {
     readonly usage_message=$(cat <<EOF
-Usage: $0 [-km] NAME
+Usage: $0 NAME
 Setup a directory for new slide.
-  -k: use katex
-  -m: use mathjax
 EOF
              )
     error "${usage_message}"
     exit 1
 }
 
-readonly current_dir=$(pwd -P)
-readonly template_dir=$(dirname "$(readlink -f "$0")")
-readonly slide_file="${template_dir}/slide.md"
-index_file="${template_dir}/index.html"
-
-while getopts km OPT
-do
-    case $OPT in
-        k) index_file="${template_dir}/index-katex.html";;
-        m) index_file="${template_dir}/index-mathjax.html";;
-        \?) usage;;
-    esac
-done
-shift $((OPTIND - 1))
-(($# == 0)) && {
-    error "specified no argument: expected 1"
-    usage
-}
-(($# != 1)) && {
+if (($# != 1)); then
     error "specified $# arguments: expected 1"
     usage
-}
-
-readonly target_dir="${current_dir}/$1"
-readonly target_index="${target_dir}/index.html"
-readonly target_slide="${target_dir}/slide.md"
-
-mkdir -p "${target_dir}"
-cp -f "${index_file}" "${target_index}"
-cp -f "${slide_file}" "${target_slide}"
-ln -snf "${template_dir}" "${target_dir}/template"
+fi
+readonly current_dir=$(pwd -P)
+readonly template_dir=$(dirname "$(readlink -f "$0")")
+readonly src_dir="${template_dir}/template"
+readonly dst_dir="${current_dir}/$1"
+mkdir -p "${dst_dir}"
+cp -irv "${src_dir}"/* "${dst_dir}"
+ln -snf "${template_dir}" "${dst_dir}/template"
