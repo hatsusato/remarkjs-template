@@ -1,7 +1,8 @@
 var options = {
     sourceUrl: 'slide.md',
     highlightStyle: 'googlecode',
-    highlightSpans: false,
+    highlightSpans: true,
+    highlightLines: true,
     ratio: '16:9',
     navigation: {
         scroll: false,
