@@ -4,6 +4,7 @@ readonly katex_api_url='https://api.github.com/repos/Khan/KaTeX/releases/latest'
 readonly katex_archive='katex.tar.gz'
 readonly remark_url='https://remarkjs.com/downloads/remark-latest.min.js'
 readonly remark_file='remark-latest.min.js'
+readonly targets=('katex.min.css' 'katex.min.js' 'auto-render.min.js')
 
 remove_archive() {
     local error_msg='failed to clean: please remove extracted files manually'
@@ -44,6 +45,6 @@ wget -O "${remark_file}" "${remark_url}"
 katex_url=$(url_from_api "${katex_api_url}" "${katex_archive}")
 trap atexit EXIT
 wget -O "${katex_archive}" "${katex_url}"
-for target in 'katex.min.js' 'auto-render.min.js'; do
+for target in "${targets[@]}"; do
     extract "${katex_archive}" "${target}"
 done
