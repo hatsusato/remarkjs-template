@@ -1,5 +1,4 @@
 var options = {
-    sourceUrl: 'slide.md',
     highlightStyle: 'googlecode',
     highlightSpans: true,
     highlightLines: true,
@@ -9,9 +8,6 @@ var options = {
         touch: false,
         click: false,
     }
-};
-function createSlide() {
-    return remark.create(options);
 };
 function createKatexSlide() {
     var renderMath = function() {
@@ -25,5 +21,4 @@ function createKatexSlide() {
     };
     return remark.create(options, renderMath);
 }
-var slideshow = createSlide();
-// var slideshow = createKatexSlide();
+var slideshow = createKatexSlide();
