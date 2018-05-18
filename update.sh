@@ -6,21 +6,17 @@ readonly remark_url='https://remarkjs.com/downloads/remark-latest.min.js'
 readonly remark_file='remark-latest.min.js'
 readonly targets=('katex.min.css' 'katex.min.js' 'auto-render.min.js')
 
-remove_archive() {
+atexit() {
     local error_msg='failed to clean: please remove extracted files manually'
-    local archive="$1"
-    if test -f "${archive}"; then
-        local prefix=$(tar -tf "${archive}" | cut -f 1 -d / | uniq)
+    if test -f "${katex_archive}"; then
+        local prefix=$(tar -tf "${katex_archive}" | cut -f 1 -d / | uniq)
         if [[ "${prefix}" =~ $'\n' ]]; then
             echo "${error_msg}" >&2
         elif test -d "${prefix}"; then
             rm -r "${prefix}"
         fi
-        rm "${archive}"
+        rm "${katex_archive}"
     fi
-}
-atexit() {
-    remove_archive "${katex_archive}"
 }
 url_from_api() {
     local filter='.assets [] .browser_download_url'
