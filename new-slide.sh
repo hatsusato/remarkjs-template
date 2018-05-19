@@ -15,7 +15,7 @@ copy() {
     cp -irv "${src_path}" "${dst_path}"
 }
 
-top_dir=$(cd "$(dirname "$0")"; pwd -P)
+top_dir=$(cd "$(dirname "$(realpath "$0")")"; pwd -P)
 current_dir=$(pwd -P)
 target_dir="${current_dir}/$1"
 index_name='index.html'
