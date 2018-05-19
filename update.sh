@@ -29,17 +29,18 @@ url_from_api() {
 extract() {
     archive="$1"
     target="$2"
+    ext="${target##*.}"
     pattern='/'$(<<<"${target}" sed -e 's/\./\\\./g')'$'
     target_path=$(tar -tf "${archive}" | grep "${pattern}")
     tar -zxf "${archive}" "${target_path}"
-    mv "${target_path}" "${target}"
+    mv "${target_path}" "${ext}/${target}"
 }
 
 if ! which jq &>/dev/null; then
     echo '`jq` not found: apt install jq' >&2
     exit
 fi
-wget -O "${remark_file}" "${remark_url}"
+wget -O "js/${remark_file}" "${remark_url}"
 katex_url=$(url_from_api "${katex_api_url}" "${katex_archive}")
 trap atexit EXIT
 wget -O "${katex_archive}" "${katex_url}"
