@@ -40,6 +40,7 @@ if ! which jq &>/dev/null; then
     echo '`jq` not found: apt install jq' >&2
     exit
 fi
+cd "$(dirname "$(realpath "$0")")"
 wget -O "js/${remark_file}" "${remark_url}"
 katex_url=$(url_from_api "${katex_api_url}" "${katex_archive}")
 trap atexit EXIT
