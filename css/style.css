@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import "page16-9.css"
 /* image */
 img[alt="enter"] {
     float: right;
