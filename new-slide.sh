@@ -12,7 +12,7 @@ link() {
 copy() {
     src_path="$1"
     dst_path="$2"
-    cp -irv "${src_path}" "${dst_path}"
+    cp -iv "${src_path}" "${dst_path}"
 }
 
 top_dir=$(cd "$(dirname "$(realpath "$0")")"; pwd -P)
@@ -22,4 +22,5 @@ index_name='index.html'
 mkdir "${target_dir}"
 link "${top_dir}/js" "${target_dir}/js"
 link "${top_dir}/css" "${target_dir}/css"
+copy "${top_dir}/main.css" "${target_dir}/main.css"
 copy "${top_dir}/${index_name}" "${target_dir}/index.html"
