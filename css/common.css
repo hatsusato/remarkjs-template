@@ -41,8 +41,7 @@ html {
     background: var(--color-base);
     color: var(--color-text);
 }
-.remark-slide-content em,
-.remark-slide-content strong {
+.remark-slide-content em {
     color: var(--color-accent);
 }
 /* font */
@@ -57,6 +56,10 @@ html {
 .remark-slide-content .remark-code,
 .remark-slide-content .remark-inline-code {
     font-family: 'Ubuntu Mono';
+}
+.remark-slide-content em {
+    font-style: normal;
+    font-weight: bold;
 }
 /* text */
 .remark-slide-content {
