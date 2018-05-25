@@ -26,12 +26,12 @@
     text-align: center;
 }
 .remark-slide-content.title > h1 {
-    font-size: 60px;
+    font-size: 2rem;
 }
 .remark-slide-content.title > h2 {
-    font-size: 50px;
+    font-size: 1.5rem;
 }
 .remark-slide-content.title > h3 {
-    font-size: 40px;
+    font-size: 1.5rem;
     font-weight: normal;
 }

@@ -19,12 +19,12 @@
 }
 /* text */
 .remark-slide-content.default > h1 {
-    font-size: 60px;
+    font-size: 1.5rem;
 }
 .remark-slide-content.default > h2 {
-    font-size: 40px;
+    font-size: 1rem;
 }
 .remark-slide-content.default > h3 {
-    font-size: 40px;
+    font-size: 1rem;
     font-weight: normal;
 }

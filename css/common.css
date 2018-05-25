@@ -74,3 +74,6 @@ html {
 .remark-slide-content .remark-code {
     font-size: .8em;
 }
+.remark-slide-content * {
+    line-height: 1.5em;
+}
