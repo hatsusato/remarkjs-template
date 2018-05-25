@@ -5,13 +5,13 @@
 :root {
     --color-base: hsl(0,0%,95%);
     --color-base-sub: hsl(0,0%,90%);
-    --color-front: hsl(240,50%,80%);
-    --color-ftont-sub: hsl(0,50%,80%);
-    --color-main: hsl(240,50%,60%);
-    --color-accent: hsl(0,50%,60%);
-    --color-back: hsl(240,50%,40%);
-    --color-back-sub: hsl(0,50%,40%);
-    --color-text: hsl(240,50%,20%);
+    --color-front: hsl(240,75%,75%);
+    --color-front-sub: hsl(0,75%,75%);
+    --color-main: hsl(240,75%,60%);
+    --color-accent: hsl(0,75%,60%);
+    --color-back: hsl(240,75%,45%);
+    --color-back-sub: hsl(0,75%,45%);
+    --color-text: hsl(240,75%,15%);
 }
 html {
     font-size: 36px;
