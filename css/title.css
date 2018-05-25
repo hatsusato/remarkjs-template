@@ -3,9 +3,6 @@
 .remark-slide-content.title > h2 {
     margin: 0em -2rem;
 }
-.remark-slide-content.title > h1 + h2 {
-    margin-top: -1em;
-}
 /* padding */
 .remark-slide-content.title {
     padding: 1rem 2rem;
@@ -15,7 +12,10 @@
     padding: .5em 2rem;
 }
 /* color */
-.remark-slide-content.title > h1,
+.remark-slide-content.title > h1 {
+    background: var(--color-main);
+    color: var(--color-text);
+}
 .remark-slide-content.title > h2 {
     background: var(--color-front);
     color: var(--color-text);
