@@ -37,7 +37,7 @@ html {
     padding-left: 1em;
 }
 /* color */
-.remark-slide-content .remark-slide-content {
+.remark-slide-content {
     background: var(--color-base);
     color: var(--color-text);
 }
