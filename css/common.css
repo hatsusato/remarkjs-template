@@ -40,6 +40,9 @@ html {
     line-height: 1;
 }
 /* margin */
+.remark-slide-content > h1 {
+    margin: 0em -1rem;
+}
 .remark-slide-content p,
 .remark-slide-content pre,
 .remark-slide-content ol,
@@ -49,6 +52,9 @@ html {
 /* padding */
 .remark-slide-content {
     padding: 0em 1rem;
+}
+.remark-slide-content > h1 {
+    padding: .25em 1rem;
 }
 .remark-slide-content .remark-slide-number {
     padding: .5em .5rem;
@@ -68,12 +74,18 @@ html {
 .remark-slide-content {
     background: var(--color-base);
 }
+.remark-slide-content > h1 {
+    background: var(--color-main);
+}
 .remark-slide-content code.remark-inline-code {
     background: var(--color-base-sub);
 }
 /* color */
 .remark-slide-content {
     color: var(--color-text);
+}
+.remark-slide-content > h1 {
+    color: var(--color-base);
 }
 .remark-slide-content em {
     color: var(--color-accent);
@@ -97,6 +109,9 @@ html {
 }
 .remark-slide-content {
     font-size: 1rem;
+}
+.remark-slide-content > h1 {
+    font-size: 1.5rem;
 }
 .remark-slide-content .remark-slide-number {
     font-size: .8rem;
