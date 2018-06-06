@@ -40,11 +40,11 @@ html {
     line-height: 1;
 }
 /* margin */
-.remark-slide-content > h1 {
+.remark-slide-content h1 {
     margin: 0em -1rem;
 }
-.remark-slide-content > h2,
-.remark-slide-content > h3 {
+.remark-slide-content h2,
+.remark-slide-content h3 {
     margin: .5em 0rem;
 }
 .remark-slide-content p,
@@ -57,7 +57,7 @@ html {
 .remark-slide-content {
     padding: 0em 1rem;
 }
-.remark-slide-content > h1 {
+.remark-slide-content h1 {
     padding: .25em 1rem;
 }
 .remark-slide-content .remark-slide-number {
@@ -78,7 +78,7 @@ html {
 .remark-slide-content {
     background: var(--color-base);
 }
-.remark-slide-content > h1 {
+.remark-slide-content h1 {
     background: var(--color-main);
 }
 .remark-slide-content code.remark-inline-code {
@@ -88,7 +88,7 @@ html {
 .remark-slide-content {
     color: var(--color-text);
 }
-.remark-slide-content > h1 {
+.remark-slide-content h1 {
     color: var(--color-base);
 }
 .remark-slide-content em {
@@ -110,11 +110,11 @@ html {
 .remark-slide-content {
     font-size: 1rem;
 }
-.remark-slide-content > h1 {
+.remark-slide-content h1 {
     font-size: 1.5rem;
 }
-.remark-slide-content > h2,
-.remark-slide-content > h3 {
+.remark-slide-content h2,
+.remark-slide-content h3 {
     font-size: 1rem;
 }
 .remark-slide-content .remark-slide-number {
@@ -126,7 +126,7 @@ html {
 .remark-slide-content .remark-code {
     font-size: .8em;
 }
-.remark-slide-content > h3 {
+.remark-slide-content h3 {
     font-weight: normal;
 }
 .remark-slide-content em {
