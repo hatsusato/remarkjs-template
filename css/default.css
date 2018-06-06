@@ -1,9 +1,16 @@
+/* display */
+/* list-style */
+/* position */
+/* float */
+/* clear */
+/* width */
+/* height */
 /* margin */
 .remark-slide-content.default > h1 {
     margin: 0em -1rem;
 }
 .remark-slide-content.default > h2 {
-    margin: .5em 0em;
+    margin: .5em 0rem;
 }
 /* padding */
 .remark-slide-content.default {
@@ -12,12 +19,16 @@
 .remark-slide-content.default > h1 {
     padding: .25em 1rem;
 }
-/* color */
+/* border */
+/* background */
 .remark-slide-content.default > h1 {
     background: var(--color-main);
+}
+/* color */
+.remark-slide-content.default > h1 {
     color: var(--color-base);
 }
-/* text */
+/* font */
 .remark-slide-content.default > h1 {
     font-size: 1.5rem;
 }
@@ -28,3 +39,9 @@
     font-size: 1rem;
     font-weight: normal;
 }
+/* text-decoration */
+/* text-align */
+/* vertical-align */
+/* white-space */
+/* other text */
+/* content */
