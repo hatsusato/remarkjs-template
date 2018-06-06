@@ -25,16 +25,12 @@
 }
 /* border */
 /* background */
-.remark-slide-content.title > h1 {
-    background: var(--color-main);
-}
 .remark-slide-content.title > h2 {
     background: var(--color-front);
 }
 /* color */
-.remark-slide-content.title > h1,
 .remark-slide-content.title > h2 {
-    color: var(--color-text);
+    color: var(--color-base);
 }
 /* font */
 .remark-slide-content.title > h1 {
@@ -45,7 +41,6 @@
 }
 .remark-slide-content.title > h3 {
     font-size: 1.5rem;
-    font-weight: normal;
 }
 /* text-decoration */
 /* text-align */
