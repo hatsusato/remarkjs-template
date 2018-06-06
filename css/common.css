@@ -1,7 +1,8 @@
-/* global */
+/* import */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+/* root */
 :root {
     --color-base: hsl(0,0%,95%);
     --color-base-sub: hsl(0,0%,90%);
@@ -16,29 +17,59 @@
 html {
     font-size: 36px;
 }
+.remark-notes-area {
+    font-size: .5rem;
+}
+/* display */
+.remark-slide-content code.remark-code {
+    display: inline-block;
+}
+/* list-style */
 /* position */
 .remark-slide-content .remark-slide-number {
-    right: 0em;
-    bottom: 0em;
+    bottom: 0em; right: 0rem;
+}
+/* float */
+/* clear */
+/* width */
+/* height */
+.remark-slide-content {
+    line-height: 1.5;
+}
+.remark-slide-content pre {
+    line-height: 1;
 }
 /* margin */
 .remark-slide-content p,
 .remark-slide-content pre,
 .remark-slide-content ol,
 .remark-slide-content ul {
-    margin: .5em 0em;
+    margin: .5em 0rem;
 }
 /* padding */
 .remark-slide-content .remark-slide-number {
-    padding: .5rem;
+    padding: .5em .5rem;
 }
 .remark-slide-content ol,
 .remark-slide-content ul {
-    padding-left: 1em;
+    padding-left: 1rem;
+}
+/* border */
+.remark-slide-content code.remark-inline-code {
+    border: 2px solid var(--color-base-sub);
+}
+.remark-slide-content iframe {
+    border-style: none;
+}
+/* background */
+.remark-slide-content {
+    background: var(--color-base);
+}
+.remark-slide-content code.remark-inline-code {
+    background: var(--color-base-sub);
 }
 /* color */
 .remark-slide-content {
-    background: var(--color-base);
     color: var(--color-text);
 }
 .remark-slide-content em {
@@ -61,7 +92,6 @@ html {
     font-style: normal;
     font-weight: bold;
 }
-/* text */
 .remark-slide-content {
     font-size: 1rem;
 }
@@ -74,9 +104,9 @@ html {
 .remark-slide-content .remark-code {
     font-size: .8em;
 }
-.remark-slide-content > * {
-    line-height: 1.5em;
-}
-.remark-slide-content pre {
-    line-height: normal;
-}
+/* text-decoration */
+/* text-align */
+/* vertical-align */
+/* white-space */
+/* other text */
+/* content */
