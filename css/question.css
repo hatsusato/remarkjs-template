@@ -24,13 +24,6 @@
     color: var(--color-base);
 }
 /* font */
-.remark-slide-content.question > h2 {
-    font-size: 1rem;
-}
-.remark-slide-content.question > h3 {
-    font-size: 1rem;
-    font-weight: normal;
-}
 /* text-decoration */
 /* text-align */
 /* vertical-align */

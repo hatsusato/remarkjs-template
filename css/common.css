@@ -43,6 +43,10 @@ html {
 .remark-slide-content > h1 {
     margin: 0em -1rem;
 }
+.remark-slide-content > h2,
+.remark-slide-content > h3 {
+    margin: .5em 0rem;
+}
 .remark-slide-content p,
 .remark-slide-content pre,
 .remark-slide-content ol,
@@ -112,6 +116,13 @@ html {
 }
 .remark-slide-content > h1 {
     font-size: 1.5rem;
+}
+.remark-slide-content > h2 {
+    font-size: 1rem;
+}
+.remark-slide-content > h3 {
+    font-size: 1rem;
+    font-weight: normal;
 }
 .remark-slide-content .remark-slide-number {
     font-size: .8rem;
