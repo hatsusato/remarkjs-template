@@ -107,22 +107,15 @@ html {
 .remark-slide-content .remark-inline-code {
     font-family: 'Ubuntu Mono';
 }
-.remark-slide-content em {
-    font-style: normal;
-    font-weight: bold;
-}
 .remark-slide-content {
     font-size: 1rem;
 }
 .remark-slide-content > h1 {
     font-size: 1.5rem;
 }
-.remark-slide-content > h2 {
-    font-size: 1rem;
-}
+.remark-slide-content > h2,
 .remark-slide-content > h3 {
     font-size: 1rem;
-    font-weight: normal;
 }
 .remark-slide-content .remark-slide-number {
     font-size: .8rem;
@@ -132,6 +125,13 @@ html {
 }
 .remark-slide-content .remark-code {
     font-size: .8em;
+}
+.remark-slide-content > h3 {
+    font-weight: normal;
+}
+.remark-slide-content em {
+    font-style: normal;
+    font-weight: bold;
 }
 /* text-decoration */
 /* text-align */
