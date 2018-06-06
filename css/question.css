@@ -11,9 +11,6 @@
     margin: 0em -1rem;
 }
 /* padding */
-.remark-slide-content.question {
-    padding: 0em 1rem;
-}
 .remark-slide-content.question > h1 {
     padding: .25em 1rem;
 }

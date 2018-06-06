@@ -47,6 +47,9 @@ html {
     margin: .5em 0rem;
 }
 /* padding */
+.remark-slide-content {
+    padding: 0em 1rem;
+}
 .remark-slide-content .remark-slide-number {
     padding: .5em .5rem;
 }
