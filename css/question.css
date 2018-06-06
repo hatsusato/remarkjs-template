@@ -30,3 +30,9 @@
 /* white-space */
 /* other text */
 /* content */
+.remark-slide-content.question > h1::before {
+    content: "Q. ";
+}
+.remark-slide-content.question > h2::before {
+    content: "A. ";
+}
