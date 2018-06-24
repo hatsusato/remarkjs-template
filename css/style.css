@@ -12,11 +12,23 @@
 .remark-slide-content .no-margin > * {
     margin: 0em 0rem;
 }
+.remark-slide-content .oneline {
+    margin: .5em 0rem;
+}
+.remark-slide-content .oneline > p {
+    margin: 0em 0rem;
+}
 /* padding */
 /* border */
 /* background */
 /* color */
 /* font */
+.remark-slide-content ruby > rt {
+    font-size: .6em;
+}
+.remark-slide-content ruby {
+    font-weight: bold;
+}
 /* text-decoration */
 /* text-align */
 /* vertical-align */
