@@ -6,8 +6,11 @@
 /* width */
 /* height */
 /* margin */
-.remark-slide-content .less-margin * {
+.remark-slide-content .less-margin > * {
     margin: .25em 0rem;
+}
+.remark-slide-content .no-margin > * {
+    margin: 0em 0rem;
 }
 /* padding */
 /* border */
