@@ -49,6 +49,15 @@
 .remark-slide-content ruby {
     font-weight: bold;
 }
+.remark-slide-content .bold {
+    font-weight: bold;
+}
+.remark-slide-content .italic {
+    font-style: italic;
+}
+.remark-slide-content .italic code.remark-inline-code {
+    font-style: normal;
+}
 /* text-decoration */
 .remark-slide-content .underline {
     text-decoration: none;
