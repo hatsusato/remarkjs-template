@@ -1,6 +1,6 @@
 /* display */
-.bracket-enum > ol > li,
-.paren-enum > ol > li {
+.remark-slide-content .bracket-enum > ol > li,
+.remark-slide-content .paren-enum > ol > li {
     display: flex;
 }
 /* list-style */
@@ -36,24 +36,24 @@
 .remark-slide-content .double-column > ul {
     margin: 0em 0rem;
 }
-.bracket-enum > ol > li,
-.paren-enum > ol > li {
+.remark-slide-content .bracket-enum > ol > li,
+.remark-slide-content .paren-enum > ol > li {
     margin: .5em 0rem;
 }
-.bracket-enum > ol > li > p,
-.paren-enum > ol > li > p {
+.remark-slide-content .bracket-enum > ol > li > p,
+.remark-slide-content .paren-enum > ol > li > p {
     margin: 0em 0rem;
 }
 /* padding */
 .remark-slide-content .blockquote {
     padding: 0em 1.5rem;
 }
-.bracket-enum > ol,
-.paren-enum > ol {
+.remark-slide-content .bracket-enum > ol,
+.remark-slide-content .paren-enum > ol {
     padding-left: 0rem;
 }
-.bracket-enum > ol > li:before,
-.paren-enum > ol > li:before {
+.remark-slide-content .bracket-enum > ol > li:before,
+.remark-slide-content .paren-enum > ol > li:before {
     padding-right: .25rem;
 }
 /* border */
@@ -83,13 +83,13 @@
 .remark-slide-content .double-column {
     column-count: 2;
 }
-.bracket-enum > ol > li,
-.paren-enum > ol > li {
+.remark-slide-content .bracket-enum > ol > li,
+.remark-slide-content .paren-enum > ol > li {
     counter-increment: cnt;
 }
-.bracket-enum > ol > li:before {
+.remark-slide-content .bracket-enum > ol > li:before {
     content: "[" counter(cnt) "]";
 }
-.paren-enum > ol > li:before {
+.remark-slide-content .paren-enum > ol > li:before {
     content: "(" counter(cnt) ")";
 }
