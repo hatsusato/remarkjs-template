@@ -3,6 +3,9 @@
 .remark-slide-content .paren-enum > ol > li {
     display: flex;
 }
+.remark-slide-content .flex {
+    display: flex;
+}
 /* list-style */
 /* position */
 .remark-slide-content .blockquote {
