@@ -1,10 +1,27 @@
 /* display */
+.remark-slide-content .underline {
+    display: inline-block;
+}
+.remark-slide-content .underline:before {
+    box-sizing: border-box;
+}
 /* list-style */
 /* position */
+.remark-slide-content .underline {
+    position: relative;
+}
+.remark-slide-content .underline:before {
+    position: absolute;
+    left: 0px; right: 0px;
+    bottom: 4px;
+}
 /* float */
 /* clear */
 /* width */
 /* height */
+.remark-slide-content .underline:before {
+    height: 2px;
+}
 /* margin */
 .remark-slide-content .less-margin > * {
     margin: .25em 0rem;
@@ -21,6 +38,9 @@
 /* padding */
 /* border */
 /* background */
+.remark-slide-content .underline:before {
+    background: currentColor;
+}
 /* color */
 /* font */
 .remark-slide-content ruby > rt {
@@ -30,8 +50,14 @@
     font-weight: bold;
 }
 /* text-decoration */
+.remark-slide-content .underline {
+    text-decoration: none;
+}
 /* text-align */
 /* vertical-align */
 /* white-space */
 /* other text */
 /* content */
+.remark-slide-content .underline:before {
+    content: "";
+}
