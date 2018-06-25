@@ -2,7 +2,7 @@
 
 set -eu
 
-readonly katex_api_url='https://api.github.com/repos/Khan/KaTeX/releases/latest'
+readonly katex_api_url='https://api.github.com/repos/Khan/KaTeX/releases'
 readonly katex_archive='katex.tar.gz'
 readonly remark_url='https://remarkjs.com/downloads/remark-latest.min.js'
 readonly remark_file='remark-latest.min.js'
@@ -21,7 +21,7 @@ atexit() {
     fi
 }
 url_from_api() {
-    local filter='.assets [] .browser_download_url'
+    local filter='.[0] .assets [] .browser_download_url'
     local url="$1"
     local name="$2"
     wget -O - "${url}" | jq "${filter}" | tr -d '"' | fgrep "${name}"
