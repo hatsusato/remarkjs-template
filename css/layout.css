@@ -6,6 +6,9 @@
 .remark-slide-content .flex {
     display: flex;
 }
+.remark-slide-content .block {
+    display: block;
+}
 /* list-style */
 /* position */
 .remark-slide-content .blockquote {
