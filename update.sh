@@ -6,7 +6,7 @@ readonly katex_api_url='https://api.github.com/repos/Khan/KaTeX/releases/latest'
 readonly katex_archive='katex.tar.gz'
 readonly remark_url='https://remarkjs.com/downloads/remark-latest.min.js'
 readonly remark_file='remark-latest.min.js'
-readonly targets=('katex.min.css' 'katex.min.js' 'auto-render.min.js')
+readonly targets=('katex.min.css' 'katex.min.js' 'auto-render.min.js' 'fonts/')
 readonly atexit_err='failed to clean: please remove extracted files manually'
 
 atexit() {
@@ -29,7 +29,11 @@ url_from_api() {
 extract() {
     archive="$1"
     target="$2"
-    ext="${target##*.}"
+    if [[ "${target}" =~ /$ ]]; then
+        ext='.'
+    else
+        ext="${target##*.}"
+    fi
     pattern='/'$(<<<"${target}" sed -e 's/\./\\\./g')'$'
     target_path=$(tar -tf "${archive}" | grep "${pattern}")
     tar -zxf "${archive}" "${target_path}"
