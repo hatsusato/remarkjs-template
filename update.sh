@@ -29,15 +29,15 @@ url_from_api() {
 extract() {
     archive="$1"
     target="$2"
-    if [[ "${target}" =~ /$ ]]; then
-        ext='.'
-    else
-        ext="${target##*.}"
-    fi
     pattern='/'$(<<<"${target}" sed -e 's/\./\\\./g')'$'
     target_path=$(tar -tf "${archive}" | grep "${pattern}")
+    if [[ "${target}" =~ /$ ]]; then
+        target="${target%/}"
+    else
+        target="${target##*.}/${target}"
+    fi
     tar -zxf "${archive}" "${target_path}"
-    mv "${target_path}" "${ext}/${target}"
+    mv "${target_path}" "${target}"
 }
 
 if ! which jq &>/dev/null; then
