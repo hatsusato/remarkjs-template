@@ -6,6 +6,16 @@
 .remark-slide-content .flex {
     display: flex;
 }
+.remark-slide-content .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.remark-slide-content .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .remark-slide-content .block {
     display: block;
 }
