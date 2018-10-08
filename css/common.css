@@ -68,12 +68,23 @@ html {
 .remark-slide-content ul {
     padding-left: 1rem;
 }
+.remark-slide-content table th,
+.remark-slide-content table td {
+    padding: .2em .6em;
+}
 /* border */
 .remark-slide-content code.remark-inline-code {
     border: 2px solid var(--color-base-sub);
 }
 .remark-slide-content iframe {
     border-style: none;
+}
+.remark-slide-content table {
+    border-collapse: collapse;
+}
+.remark-slide-content table th,
+.remark-slide-content table td {
+    border: 2px solid var(--color-text);
 }
 /* background */
 .remark-slide-content {
@@ -83,6 +94,12 @@ html {
     background: var(--color-main);
 }
 .remark-slide-content code.remark-inline-code {
+    background: var(--color-base-sub);
+}
+.remark-slide-content table th {
+    background: var(--color-front-sub);
+}
+.remark-slide-content table td {
     background: var(--color-base-sub);
 }
 /* color */
