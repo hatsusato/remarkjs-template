@@ -46,6 +46,9 @@
 .remark-slide-content ruby > rt {
     font-size: .6em;
 }
+.remark-slide-content .small {
+    font-size: .8em;
+}
 .remark-slide-content ruby {
     font-weight: bold;
 }
