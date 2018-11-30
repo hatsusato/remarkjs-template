@@ -5,7 +5,7 @@ var options = {
     ratio: '16:9',
     navigation: {
         scroll: false,
-        touch: false,
+        touch: true,
         click: false,
     }
 };
