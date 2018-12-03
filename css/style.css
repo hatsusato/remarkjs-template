@@ -5,6 +5,9 @@
 .remark-slide-content .underline:before {
     box-sizing: border-box;
 }
+.remark-slide-content .group {
+    display: inline-block;
+}
 /* list-style */
 /* position */
 .remark-slide-content .underline {
@@ -28,6 +31,9 @@
 }
 .remark-slide-content .no-margin > * {
     margin: 0em 0rem;
+}
+.remark-slide-content li .oneline {
+    margin: .25em 0rem;
 }
 .remark-slide-content .oneline {
     margin: .5em 0rem;

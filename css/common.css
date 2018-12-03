@@ -46,6 +46,10 @@ html {
     margin: .5em 0rem;
 }
 .remark-slide-content p,
+.remark-slide-content li ol,
+.remark-slide-content li ul {
+    margin: .25em 0rem;
+}
 .remark-slide-content pre,
 .remark-slide-content ol,
 .remark-slide-content ul {
@@ -76,6 +80,9 @@ html {
 .remark-slide-content code.remark-inline-code {
     border: 2px solid var(--color-base-sub);
 }
+.remark-slide-content h1 code.remark-inline-code {
+    border-style: none;
+}
 .remark-slide-content iframe {
     border-style: none;
 }
@@ -95,6 +102,9 @@ html {
 }
 .remark-slide-content code.remark-inline-code {
     background: var(--color-base-sub);
+}
+.remark-slide-content h1 code.remark-inline-code {
+    background: var(--color-main);
 }
 .remark-slide-content table th {
     background: var(--color-front-sub);
