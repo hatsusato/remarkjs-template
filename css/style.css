@@ -48,9 +48,18 @@
     background: currentColor;
 }
 /* color */
+.remark-slide-content .gray {
+    color: gray;
+}
+.remark-slide-content .phantom {
+    opacity: .0;
+}
 /* font */
 .remark-slide-content ruby > rt {
     font-size: .6em;
+}
+.remark-slide-content .large {
+    font-size: 1.2em;
 }
 .remark-slide-content .small {
     font-size: .8em;
@@ -70,6 +79,9 @@
 /* text-decoration */
 .remark-slide-content .underline {
     text-decoration: none;
+}
+.remark-slide-content .del {
+    text-decoration: line-through;
 }
 /* text-align */
 /* vertical-align */
