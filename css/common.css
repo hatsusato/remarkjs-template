@@ -126,10 +126,10 @@ html {
 .remark-slide-content {
     font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
 }
-.remark-slide-content h1,
-.remark-slide-content h2 {
-    font-family: "Noto Serif", "Noto Serif CJK JP", serif;
-}
+/* .remark-slide-content h1, */
+/* .remark-slide-content h2 { */
+/*     font-family: "Noto Serif", "Noto Serif CJK JP", serif; */
+/* } */
 .remark-slide-content .remark-code,
 .remark-slide-content .remark-inline-code {
     font-family: "Ubuntu Mono", monospace;

@@ -47,6 +47,9 @@
 .remark-slide-content .underline:before {
     background: currentColor;
 }
+.remark-slide-content .nohighlight code.hljs .remark-code-line-highlighted {
+    background: white;
+}
 /* color */
 .remark-slide-content .gray {
     color: gray;
