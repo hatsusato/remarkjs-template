@@ -9,7 +9,8 @@ readonly remark_file='remark-latest.min.js'
 readonly targets=('katex.min.css' 'katex.min.js' 'auto-render.min.js' 'fonts/')
 
 atexit() {
-    rm -f "${katex_archive}"
+    local prefix=$(tar -tf "${katex_archive}" | head -n 1)
+    rm -r "${prefix}" "${katex_archive}"
 }
 url_from_api() {
     local filter='.[0] .assets [] .browser_download_url'
@@ -18,15 +19,18 @@ url_from_api() {
     wget -O - "${url}" | jq "${filter}" | tr -d '"' | fgrep "${name}"
 }
 extract() {
-    archive="$1"
-    target="$2"
-    dest="${target##*.}"
-    pattern=$(<<<"${target}" sed -e 's/\./\\\./g')'$'
-    target_path=$(tar -tf "${archive}" | grep "${pattern}")
+    local path
+    local archive="$1"
+    local target="$2"
+    local dest="${target##*.}/"
+    local pattern=$(<<<"${target}" sed -e 's/\./\\\./g')
+    local target_path=$(tar -tf "${archive}" | grep "${pattern}$")
     tar -zxf "${archive}" "${target_path}"
-    if [[ "${target}" != "${dest}" ]]; then
-        mv "${target_path}" "${dest}"
-    fi
+    while read path; do
+        if test -f "${path}"; then
+            cp "${path}" "${dest}"
+        fi
+    done < <(tar -tf "${archive}" | grep "${pattern}")
 }
 
 if ! which jq &>/dev/null; then
