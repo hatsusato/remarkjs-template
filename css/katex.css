@@ -1,0 +1,13 @@
+/* alignment */
+
+/* layout */
+
+/* font */
+span.katex {
+    font-size: 1em;
+}
+span.katex .mathtt {
+    font-family: "Ubuntu Mono", KaTeX_Typewriter;
+}
+
+/* color */

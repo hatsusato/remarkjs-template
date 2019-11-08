@@ -1,56 +1,53 @@
-/* margin */
-/* padding */
-/* color */
-/* text */
+/* alignment */
+.remark-slide-content.title .caption,
+.remark-slide-content.title .content,
+.remark-slide-content.title div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-/* display */
-/* list-style */
-/* position */
-/* float */
-/* clear */
-/* width */
-/* height */
-/* margin */
-.remark-slide-content.title > h1,
-.remark-slide-content.title > h2 {
-    margin: 0em -2rem;
+/* layout */
+.remark-slide-content.title div div {
+    width: 100%;
 }
-/* padding */
-.remark-slide-content.title {
-    padding: 1em 2rem;
+.remark-slide-content.title .caption,
+.remark-slide-content.title .content {
+    height: 9rem;
 }
-.remark-slide-content.title > h1,
-.remark-slide-content.title > h2 {
-    padding: .5em 2rem;
+.remark-slide-content.title .title {
+    height: 6rem;
 }
-/* border */
-/* background */
-.remark-slide-content.title > h2 {
-    background: var(--color-front);
+.remark-slide-content.title .subtitle {
+    height: 3rem;
 }
-/* color */
-.remark-slide-content.title > h2 {
-    color: var(--color-base);
+.remark-slide-content.title .author {
+    height: 4rem;
 }
+.remark-slide-content.title .place,
+.remark-slide-content.title .date {
+    height: 2rem;
+}
+
 /* font */
-.remark-slide-content.title > h1 {
+.remark-slide-content.title .caption {
+    font-weight: bold;
+}
+.remark-slide-content.title .title {
     font-size: 2rem;
 }
-.remark-slide-content.title > h2 {
-    font-size: 1.5rem;
+.remark-slide-content.title .subtitle,
+.remark-slide-content.title .author {
+    font-size: 1.2rem;
 }
-.remark-slide-content.title > h3 {
-    font-size: 1.5rem;
+
+/* color */
+.remark-slide-content.title .caption {
+    color: var(--color-back);
+    background: var(--color-main);
 }
-/* text-decoration */
-/* text-align */
-.remark-slide-content.title {
-    text-align: center;
+.remark-slide-content.title .subtitle {
+    color: var(--color-text);
+    background: var(--color-main-light);
 }
-/* vertical-align */
-.remark-slide-content.title {
-    vertical-align: middle;
-}
-/* white-space */
-/* other text */
-/* content */
