@@ -2,39 +2,41 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="title.css" rel="stylesheet" type="text/css">
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <!-- <link href="katex.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="katex.min.css" rel="stylesheet" type="text/css"> -->
     <title>TITLE</title>
   </head>
   <body>
     <textarea id="source">
 class: title
 
-# TITLE
-
-## SUBTITLE
-
-### AUTHOR
-
+.caption[
+.title[
+TITLE
+]
+.subtitle[
+SUBTITLE
+]
+]
+.content[
+.author[
+AUTHOR
+]
+.place[
 PLACE
-
+]
+.date[
 DATE
-
----
-
-# Agenda
-1. Introduction
-2. Deep-dive
-3. ...
-
-[NOTE]: Note that you need active internet connection to access remark.js script file
----
-
-# Introduction
+]
+]
     </textarea>
-    <script src="js/remark-latest.min.js" type="text/javascript"></script>
-    <script src="js/slide.js" type="text/javascript"></script>
-    <!-- <script src="js/katex.min.js" type="text/javascript"></script> -->
-    <!-- <script src="js/auto-render.min.js" type="text/javascript"></script> -->
-    <!-- <script src="js/slide-katex.js" type="text/javascript"></script> -->
+    <script src="remark-latest.min.js" type="text/javascript"></script>
+    <!-- <script src="katex.min.js" type="text/javascript"></script> -->
+    <!-- <script src="auto-render.min.js" type="text/javascript"></script> -->
+    <script src="slide.js" type="text/javascript"></script>
   </body>
 </html>
