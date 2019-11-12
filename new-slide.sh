@@ -28,5 +28,6 @@ copy "${top_dir}"/css/main.css "${target_dir}"/main.css
 copy "${top_dir}"/css/title.css "${target_dir}"/title.css
 copy "${top_dir}"/css/common.css "${target_dir}"/common.css
 copy "${top_dir}"/css/layout.css "${target_dir}"/layout.css
+copy "${top_dir}"/css/style.css "${target_dir}"/style.css
 copy "${top_dir}"/js/remark-latest.min.js "${target_dir}"/remark-latest.min.js
 copy "${top_dir}"/js/slide.js "${target_dir}"/slide.js
