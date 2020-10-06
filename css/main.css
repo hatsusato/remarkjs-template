@@ -84,9 +84,8 @@ code.remark-code {
     font-size: 0.8em;
     line-height: 1.0;
 }
-em, strong {
+em {
     font-style: normal;
-    font-weight: bold;
 }
 
 /* color */
@@ -94,11 +93,14 @@ em, strong {
     color: var(--color-text);
     background: var(--color-back);
 }
-code.remark-inline-code {
-    background: var(--color-back-dark);
+pre em {
+    background: transparent;
 }
 em {
-    color: var(--color-sub);
+    background: linear-gradient(var(--color-back) 75%, var(--color-sub-light) 0%);
+}
+strong {
+    background: linear-gradient(var(--color-back) 75%, var(--color-back-dark) 0%);
 }
 
 /* decoration */
