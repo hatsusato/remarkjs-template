@@ -8,6 +8,9 @@
 .remark-slide-content .group {
     display: inline-block;
 }
+.remark-slide-content .italic {
+    display: contents;
+}
 /* list-style */
 /* position */
 .remark-slide-content .underline {
@@ -67,6 +70,9 @@
 .remark-slide-content .small {
     font-size: .8em;
 }
+.remark-slide-content .sup {
+    font-size: .8em;
+}
 .remark-slide-content ruby {
     font-weight: bold;
 }
@@ -88,6 +94,9 @@
 }
 /* text-align */
 /* vertical-align */
+.remark-slide-content .sup {
+    vertical-align: super;
+}
 /* white-space */
 /* other text */
 /* content */
