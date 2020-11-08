@@ -102,6 +102,9 @@ em {
 strong {
     background: linear-gradient(var(--color-back) 75%, var(--color-back-dark) 0%);
 }
+:visited {
+    color: #0000EE;
+}
 
 /* decoration */
 ol ol {

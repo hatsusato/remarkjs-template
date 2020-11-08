@@ -43,6 +43,15 @@
 /* width */
 /* height */
 /* margin */
+.remark-slide-content .centering {
+    margin: auto;
+}
+.remark-slide-content .centering-vert {
+    margin: auto 0;
+}
+.remark-slide-content .centering-horz {
+    margin: 0 auto;
+}
 .remark-slide-content .blockquote {
     margin: 1em 0rem;
 }
